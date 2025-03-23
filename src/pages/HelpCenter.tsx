@@ -4,7 +4,7 @@ import Layout from '../components/layout/Layout';
 import { Separator } from '@/components/ui/separator';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Search, ChevronDown, ChevronUp } from 'lucide-react';
+import { Search, ChevronDown, ChevronUp, Mail } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
