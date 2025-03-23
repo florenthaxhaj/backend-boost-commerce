@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Footer Links */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {/* Company */}
           <div>
             <h4 className="font-bold text-lg mb-4">Company</h4>
@@ -27,21 +27,6 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/about" className="text-foreground/70 hover:text-foreground transition-colors">
                   About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/careers" className="text-foreground/70 hover:text-foreground transition-colors">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="text-foreground/70 hover:text-foreground transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/press" className="text-foreground/70 hover:text-foreground transition-colors">
-                  Press
                 </Link>
               </li>
             </ul>
@@ -69,33 +54,6 @@ const Footer: React.FC = () => {
               <li>
                 <Link to="/new-arrivals" className="text-foreground/70 hover:text-foreground transition-colors">
                   New Arrivals
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h4 className="font-bold text-lg mb-4">Support</h4>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/help" className="text-foreground/70 hover:text-foreground transition-colors">
-                  Help Center
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-foreground/70 hover:text-foreground transition-colors">
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/shipping" className="text-foreground/70 hover:text-foreground transition-colors">
-                  Shipping
-                </Link>
-              </li>
-              <li>
-                <Link to="/returns" className="text-foreground/70 hover:text-foreground transition-colors">
-                  Returns & Exchanges
                 </Link>
               </li>
             </ul>
