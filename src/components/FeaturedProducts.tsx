@@ -21,19 +21,36 @@ const FeaturedProducts: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {featuredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+          {featuredProducts.slice(0, 8).map((product, index) => (
+            <div 
+              key={product.id} 
+              className="animate-fade-in" 
+              style={{ 
+                animationDelay: `${index * 0.1}s`,
+                opacity: 0,
+                animation: `fadeIn 0.5s ease-in-out forwards ${index * 0.1}s`
+              }}
+            >
+              <ProductCard product={product} />
+            </div>
           ))}
         </div>
         
         <div className="mt-16 text-center">
-          <Button asChild size="lg" variant="default" className="rounded-full">
+          <Button asChild size="lg" variant="default" className="rounded-full transition-transform hover:scale-105">
             <Link to="/products" className="inline-flex items-center">
               View All Products <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </div>
       </div>
+      
+      <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </section>
   );
 };
