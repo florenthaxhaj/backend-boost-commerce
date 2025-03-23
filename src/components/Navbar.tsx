@@ -50,6 +50,9 @@ const Navbar: React.FC = () => {
             <Link to="/contact" className="text-foreground/80 hover:text-foreground transition-colors">
               Contact
             </Link>
+            <Link to="/help" className="text-foreground/80 hover:text-foreground transition-colors">
+              Help
+            </Link>
           </nav>
 
           {/* Cart and Search */}
@@ -114,6 +117,13 @@ const Navbar: React.FC = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact
+            </Link>
+            <Link 
+              to="/help" 
+              className="px-6 py-3 text-foreground/80 hover:text-foreground hover:bg-secondary/50 transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Help
             </Link>
           </nav>
         </div>

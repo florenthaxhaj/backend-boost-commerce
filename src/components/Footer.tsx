@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import NewsletterSubscribe from './NewsletterSubscribe';
 
 const Footer: React.FC = () => {
   return (
@@ -15,14 +15,7 @@ const Footer: React.FC = () => {
           <p className="text-foreground/70 mb-6">
             Stay updated with our latest products, offers, and insights.
           </p>
-          <div className="flex gap-2">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              className="rounded-full bg-white/70"
-            />
-            <Button className="rounded-full">Subscribe</Button>
-          </div>
+          <NewsletterSubscribe />
         </div>
 
         {/* Footer Links */}
